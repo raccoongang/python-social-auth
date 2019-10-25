@@ -46,7 +46,7 @@ class AuthCanceled(AuthException):
         super(AuthCanceled, self).__init__(*args, **kwargs)
 
     def __str__(self):
-        return 'Authentication process canceled'
+        return 'Access Denied. You do not have permission to access this resource.'
 
 
 class AuthUnknownError(AuthException):

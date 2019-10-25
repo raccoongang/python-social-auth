@@ -64,7 +64,7 @@ class AuthExceptionTest(BaseExceptionTestCase):
 
 class AuthCanceledTest(BaseExceptionTestCase):
     exception = AuthCanceled('foobar')
-    expected_message = 'Authentication process canceled'
+    expected_message = 'Access Denied. You do not have permission to access this resource.'
 
 
 class AuthUnknownErrorTest(BaseExceptionTestCase):
